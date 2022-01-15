@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.attendancesystem">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AttendanceSystem">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityLogin"></activity>
+        <activity android:name=".welcomeTeacher"></activity>
+        <activity android:name=".coursesActivity"></activity>
+
+        <activity android:name=".ActionToCourse1"></activity>
+        <activity android:name=".takeAttendance"></activity>
+        <activity android:name=".takeAttendance2"></activity>
+        <activity android:name=".viewAttendance1"></activity>
+        <activity android:name=".viewAttendance2"></activity>
+        <activity android:name=".viewAttendance3"></activity>
+        <activity android:name=".takeAttendance3"></activity>
+        <activity android:name=".ActionToCourse2"></activity>
+        <activity android:name=".ActionToCourse3"></activity>
+    </application>
+
+</manifest>
