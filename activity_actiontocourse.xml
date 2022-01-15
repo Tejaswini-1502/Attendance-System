@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/atc">
+
+    <Button
+        android:id="@+id/btn_takeAttendance"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="158dp"
+        android:backgroundTint="#00BCD4"
+        android:cursorVisible="true"
+        android:fontFamily="sans-serif"
+        android:foregroundTint="#00BCD4"
+        android:text="@string/Take_Attendance"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F7FAFB"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/course_name" />
+
+    <Button
+        android:id="@+id/btn_viewAttendance"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="315dp"
+        android:backgroundTint="#00BCD4"
+        android:cursorVisible="true"
+        android:fontFamily="sans-serif"
+        android:text="@string/View_Attendance"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FAFBFB"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_takeAttendance"
+        app:layout_constraintVertical_bias="0.456" />
+
+    <TextView
+        android:id="@+id/course_name"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="89dp"
+        android:fontFamily="sans-serif"
+        android:text="TextView"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FF5722"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_takeAttendance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
