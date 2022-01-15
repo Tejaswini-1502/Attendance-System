@@ -1,12 +1,11 @@
-package com.example.presence;
+package com.example.welcome_teacher;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,33 +15,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView pres = findViewById(R.id.presence);
+        Button conti = findViewById(R.id.button);
         Animation bounce_anim = AnimationUtils.loadAnimation(getApplicationContext(),
-                R.anim.bounce);
-        pres.startAnimation(bounce_anim);
+                R.anim.move);
+        conti.startAnimation(bounce_anim);
 
         getSupportActionBar().hide();
-
-       /* new Handler().postDelayed(new Runnable() {
-
-// Using handler with postDelayed called runnable run method
-
-            @Override
-
-            public void run() {
-
-                Intent i = new Intent(MainSplashScreen.this, FirstScreen.class);
-
-                startActivity(i);
-
-                // close this activity
-
-                finish();
-
-            }
-
-        }, 5*1000); // wait for 5 seconds
-*/
-
     }
 }
